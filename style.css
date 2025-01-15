@@ -7,6 +7,7 @@ body {
   font-family: "Lato", serif;
 }
 
+/* header section start  */
 .hero {
   background-color: rgba(229, 84, 115, 0.1);
   display: flex;
@@ -62,7 +63,76 @@ body {
   text-align: left;
   margin-bottom: 147px;
 }
-/* responsive for smaller device  */
+/* header section end  */
+
+/* flowers card section start ******************** */
+.flowers-heading {
+  text-align: center;
+  margin-top: 178px;
+}
+.flowers-heading h1 {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.flowers-heading p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 48px;
+  margin-top: 24px;
+}
+
+.flowers-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.flower-1 {
+  width: 310px;
+  height: 428px;
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(167, 33, 98, 0.15);
+  align-content: end;
+  justify-content: center;
+  padding: 110px 78px 0 76px;
+}
+.flower-2 {
+  width: 310px;
+  height: 428px;
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(5, 151, 160, 0.15);
+  align-content: end;
+  justify-content: center;
+  padding: 110px 78px 0 76px;
+}
+.flower-3 {
+  width: 310px;
+  height: 428px;
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(71, 125, 17, 0.15);
+  align-content: end;
+  justify-content: center;
+  padding: 110px 78px 0 76px;
+}
+.flower-title {
+  text-align: center;
+  text-decoration: underline;
+}
+.flowers-parent img {
+  width: 310px;
+  height: 428px;
+}
+
+/* responsive for smaller device start  */
 @media screen and (max-width: 576px) {
   .hero {
     flex-direction: column;
@@ -97,4 +167,29 @@ body {
     margin-bottom: 16px;
     padding: 0px 15px;
   }
+  .flowers-parent {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .flower-1,
+  .flower-2,
+  .flower-3 {
+    width: 80%;
+    padding: 20px;
+  }
+  .flowers-parent h1 {
+    font-size: 24px;
+  }
+  .flower-1,
+  .flower-2,
+  .flower-3 img {
+    width: 70%;
+  }
+  .flower-title {
+    margin-bottom: 20px;
+  }
 }
+/* responsive for smaller device end */

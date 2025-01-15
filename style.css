@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", serif;
+}
+
+.hero {
+  background-color: rgba(229, 84, 115, 0.1);
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 850px;
+  padding-top: 50px;
+}
+.hero-description {
+  width: 708px;
+}
+.hero-description h1 {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 96px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 197px;
+  margin-bottom: 32px;
+}
+.hero-description p {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.hero-img {
+  width: 635px;
+  height: 100%;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+.btn-primary {
+  padding: 20px 43px;
+  border-radius: 8px;
+  background: rgb(229, 84, 115);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 147px;
+}
+/* responsive for smaller device  */
+@media screen and (max-width: 576px) {
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+  }
+  .hero-description {
+    padding: 0px;
+    width: 100%;
+  }
+  .hero-img img,
+  .hero-img {
+    width: 100%;
+  }
+  .btn-primary {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 8px 15px;
+  }
+  .hero-description h1 {
+    font-size: 46px;
+    line-height: 54px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    text-align: center;
+  }
+  .hero-description p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    padding: 0px 15px;
+  }
+}

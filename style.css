@@ -169,7 +169,7 @@ body {
 .discount {
   margin-top: 128px;
   /* height: 100%; */
-  padding: 80px 350px 80px 350px;
+  padding: 80px 260px 80px 260px;
   background: rgba(229, 84, 115, 0.05);
   max-width: 1920px;
   height: 620px;
@@ -225,10 +225,11 @@ margin-bottom: 32px;
   .hero-img img,
   .hero-img {
     width: 100%;
+    
   }
   .btn-primary {
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 200px;
     padding: 8px 15px;
   }
   .hero-description h1 {
@@ -265,6 +266,7 @@ margin-bottom: 32px;
   .flower-2,
   .flower-3 img {
     width: 70%;
+    padding-bottom: 0;
   }
   .flower-title {
     margin-top: 20px;
@@ -287,7 +289,7 @@ margin-bottom: 32px;
     margin-left: 0;
   }
   .discount-details button{
-    margin-left: 120px;
+    margin-left: 200px;
   
   }
 }

@@ -167,49 +167,172 @@ body {
 
 /* discount section start ************ */
 .discount {
-  margin-top: 128px;
   /* height: 100%; */
   padding: 80px 260px 80px 260px;
   background: rgba(229, 84, 115, 0.05);
   max-width: 1920px;
-  height: 620px;
   border-radius: 8px;
-  margin-bottom: 128px;
+  margin: 128px auto;
 }
 .discount-parent {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+  gap: 120px;
 }
 
-.discount-details h1{
+.discount-details h1 {
   font-size: 40px;
   font-weight: 800;
   line-height: 48px;
   letter-spacing: 0%;
   text-align: center;
- margin-top: 230px;
- margin-bottom: 24px;
+  margin-top: 230px;
+  margin-bottom: 24px;
 }
-.discount-details p{
+.discount-details p {
   color: rgba(39, 39, 39, 0.6);
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-text-align: center;
-margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 594px;
 }
-.discount-details button{
+.discount-details button {
   align-items: center;
   margin-left: 200px;
 }
-  .disc-flower img{
-    margin-left: 120px;
-  }
-  
-  
+.disc-flower img {
+}
+/* discount section end ************* */
+
+/* instagram section start *********** */
+
+.instagram {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.instagram h1 {
+  color: rgb(39, 39, 39);
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.instagram p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.insta-img {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 128px;
+}
+.insta-img img {
+  width: 342px;
+  height: 396px;
+  border-radius: 5px;
+}
+
+/* instagram section end **************** */
+
+/* subscriber section start ********* */
+.subscribe {
+  background-image: url("Flower-Asset/Rectangle\ 9.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.parent h1 {
+  color: rgb(39, 39, 39);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.parent p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.input-btn {
+  display: flex;
+  gap: 16px;
+}
+.input-btn button {
+  margin-bottom: 0;
+}
+input {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+
+  width: 700px;
+  background: rgb(255, 255, 255);
+}
+/* subscriber section end **************** */
+
+/* footer section start **************** */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #111010;
+  color: white;
+  text-align: center;
+}
+.footer-details {
+  width: 625px;
+  padding: 128px 0;
+}
+.footer-details h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  color: #e55473;
+  margin-bottom: 24px;
+}
+.footer-details h6 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+.footer-details p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
 /* responsive for smaller device start  */
 @media screen and (max-width: 576px) {
   .hero {
@@ -221,16 +344,19 @@ margin-bottom: 32px;
   .hero-description {
     padding: 0px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero-img img,
   .hero-img {
     width: 100%;
-    
   }
   .btn-primary {
-    margin-bottom: 20px;
-    margin-left: 200px;
+    /* margin-bottom: 32px; */
+    margin: 0 auto;
     padding: 8px 15px;
+    max-width: 177px;
   }
   .hero-description h1 {
     font-size: 46px;
@@ -276,21 +402,66 @@ margin-bottom: 32px;
     width: 100%;
     padding: 0;
   }
-  .discount-parent{
+  .discount-parent {
     flex-direction: column;
-    
+    gap: 0px;
   }
-  .discount{
+  .discount {
     padding: 0;
-    margin-top: 50px;
+    margin-top: 0px;
   }
-  .disc-flower img{
+  .discount-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .discount-details h1 {
+    margin-top: 0;
+  }
+  .discount-details p {
     width: 100%;
-    margin-left: 0;
   }
-  .discount-details button{
-    margin-left: 200px;
-  
+
+  .disc-flower img {
+    width: 100%;
+  }
+
+  .discount-details button {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .insta-details p {
+    width: 100%;
+  }
+  .insta-img {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .insta-img img {
+    width: 100%;
+  }
+  .subscribe {
+    background: rgba(229, 84, 115, 0.044);
+    height: 100%;
+    padding: 60px 20px;
+  }
+  .parent h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .parent p {
+    margin-bottom: 20px;
+  }
+  input {
+    width: 100%;
+  }
+  footer{
+    
+    padding: 0px;
+  }
+  .footer-details{
+    width: 100%;
+    padding-top: 30px;
   }
 }
 

@@ -125,13 +125,91 @@ body {
 }
 .flower-title {
   text-align: center;
-  text-decoration: underline;
+  color: rgb(39, 39, 39);
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration-line: underline;
 }
 .flowers-parent img {
   width: 310px;
   height: 428px;
 }
+/* flowers card section end ******************* */
 
+/* contact section start ?**************** */
+.contact {
+  margin-top: 128px;
+}
+.contact-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 85px 175px;
+  gap: 100px;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  width: 1090px;
+  margin: 0 auto;
+}
+.contact-parent img {
+  width: 88px;
+  height: 88px;
+}
+.contact-parent p {
+  margin-top: 24px;
+  color: rgba(39, 39, 39, 0.8);
+  font-size: 24px;
+  /* font-weight: 600; */
+  text-align: center;
+}
+/* .contact section end ******************** */
+
+/* discount section start ************ */
+.discount {
+  margin-top: 128px;
+  /* height: 100%; */
+  padding: 80px 350px 80px 350px;
+  background: rgba(229, 84, 115, 0.05);
+  max-width: 1920px;
+  height: 620px;
+  border-radius: 8px;
+  margin-bottom: 128px;
+}
+.discount-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.discount-details h1{
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+ margin-top: 230px;
+ margin-bottom: 24px;
+}
+.discount-details p{
+  color: rgba(39, 39, 39, 0.6);
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+margin-bottom: 32px;
+}
+.discount-details button{
+  align-items: center;
+  margin-left: 200px;
+}
+  .disc-flower img{
+    margin-left: 120px;
+  }
+  
+  
 /* responsive for smaller device start  */
 @media screen and (max-width: 576px) {
   .hero {
@@ -177,7 +255,7 @@ body {
   .flower-1,
   .flower-2,
   .flower-3 {
-    width: 80%;
+    width: 70%;
     padding: 20px;
   }
   .flowers-parent h1 {
@@ -189,7 +267,29 @@ body {
     width: 70%;
   }
   .flower-title {
-    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .contact-parent {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .discount-parent{
+    flex-direction: column;
+    
+  }
+  .discount{
+    padding: 0;
+    margin-top: 50px;
+  }
+  .disc-flower img{
+    width: 100%;
+    margin-left: 0;
+  }
+  .discount-details button{
+    margin-left: 120px;
+  
   }
 }
+
 /* responsive for smaller device end */

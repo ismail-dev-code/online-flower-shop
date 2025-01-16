@@ -63,6 +63,11 @@ body {
   text-align: left;
   margin-bottom: 147px;
 }
+.btn-primary:hover{
+  background-color: aquamarine;
+  color: black;
+  cursor: pointer;
+}
 /* header section end  */
 
 /* flowers card section start ******************** */
@@ -133,6 +138,10 @@ body {
 .flowers-parent img {
   width: 310px;
   height: 428px;
+}
+.flowers-parent img:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 /* flowers card section end ******************* */
 
@@ -235,6 +244,10 @@ body {
   gap: 24px;
   margin-bottom: 128px;
 }
+.insta-img img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
 .insta-img img {
   width: 342px;
   height: 396px;
@@ -295,7 +308,6 @@ input {
   border-radius: 8px;
   padding: 20px;
   border: none;
-
   width: 700px;
   background: rgb(255, 255, 255);
 }
@@ -455,11 +467,10 @@ footer {
   input {
     width: 100%;
   }
-  footer{
-    
+  footer {
     padding: 0px;
   }
-  .footer-details{
+  .footer-details {
     width: 100%;
     padding-top: 30px;
   }
